@@ -31,7 +31,7 @@ In your own words, define what the responsibilities of the model layer are in
 Rails.
 
 ```md
-<!-- your answer here -->
+The model layer is the hard working number cruncher in Rails that nobody sees. The controller layer sends data to the model layer and the model layer takes the request, processes it in the back end and spits out a response to the request back at the controller.
 ```
 
 ## Define Controller Responsiblities
@@ -40,7 +40,7 @@ In your own words, define what the responsibilities of the controller layer are
 in Rails.
 
 ```md
-<!-- your answer here -->
+The controller layer is the middle man between the model layer and the browser. It takes a request sent by the browser and sends it to the model layer in language that the model layer can easily work with. The model processes and sends data back to the controller which then makes the data easily readable on the browser for the user. It's the mastermind behind the scenes making everyone's job easier without them knowing it.
 ```
 
 ## Define Router Responsiblities
@@ -48,7 +48,7 @@ in Rails.
 In your own words, define what the router does in Rails.
 
 ```md
-<!-- your answer here -->
+The router is the doorman of the MVC. It looks at the HTTP verb from the browser and determines the next steps that need to be taken. A simple yet incredibly essential piece to the request-response process in Rails.
 ```
 
 ## The Request-Response Cycle in Rails
@@ -57,5 +57,5 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-<!-- your answer here -->
+The client makes a GET request from the browser. The web server chooses the correct route for that request and sends the information to the controller layer. The controller layer takes that info and makes it so the model layer can read it and process it. The model layer controls the request in the back end and if all goes well, spits the confirmed info back into the controller layer which processes and sends the appropriate response to the server and browser. 
 ```
